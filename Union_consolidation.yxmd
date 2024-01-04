@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="153" height="408" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input</Caption>
+          <Style TextColor="#314c4a" FillColor="#9fff9f" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="179" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="25">E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Corporate.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Customer_ID" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Store Number" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Customer Segment" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="First Name" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Last Name" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Address" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="City" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="State" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Zip" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Visits" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Spend" source="File: E:\Data science\Data consolidation\01_Inputs\Corporate.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="255" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="25">E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Home Office.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Customer_ID" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Store Number" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Customer Segment" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="First Name" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Last Name" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Address" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="City" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="State" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Zip" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Visits" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Spend" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Home Office.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="331" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="25">E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Small Business.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Customer_ID" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Store Number" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Customer Segment" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="First Name" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Last Name" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Address" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="City" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="State" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Zip" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Visits" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Spend" source="File: E:\Data science\Data consolidation\01_Inputs\sub_directory\Small Business.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="25">E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Consumer.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Customer_ID" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Store Number" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Customer Segment" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="First Name" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Last Name" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Address" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="City" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="State" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Zip" size="255" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Visits" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Spend" source="File: E:\Data science\Data consolidation\01_Inputs\Consumer.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="547" y="162" width="151" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output</Caption>
+          <Style TextColor="#314c4a" FillColor="#6aff8f" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="572" y="211" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">E:\Data science\Data consolidation\03_Output\Union_output.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Union_output.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="319" y="90" width="160" height="237" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Consolidation</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff5eff" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Consolidation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="356" y="211" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#4</Connection>
+                <Connection>Consumer</Connection>
+                <Connection>Corporate</Connection>
+                <Connection>Homeoffice</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Conso_union</Name>
+              <AnnotationText>Consolidation of 4 files</AnnotationText>
+              <DefaultAnnotationText>Conso_union</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="344" y="139" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Consolidation of files based on Customer ID</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="Corporate">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="Homeoffice">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="Consumer">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Union_consolidation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="807dacac-dd3d-4c14-89f7-b79cdba8af15" />
+      <Telemetry>
+        <PreviousWorkflowId value="aeee8d87-912d-4d08-8446-117f3756b5aa" />
+        <OriginWorkflowId value="aeee8d87-912d-4d08-8446-117f3756b5aa" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
